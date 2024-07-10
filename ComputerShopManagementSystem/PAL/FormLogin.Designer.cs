@@ -43,13 +43,13 @@
             this.guna2HtmlToolTip1 = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             this.picShow = new System.Windows.Forms.PictureBox();
             this.picHide = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.picClose = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHide)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,16 +173,6 @@
             this.picHide.Visible = false;
             this.picHide.Click += new System.EventHandler(this.picHide_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ComputerShopManagementSystem.Properties.Resources.Tech_Haven_ico;
-            this.pictureBox3.Location = new System.Drawing.Point(323, 79);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(327, 327);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
             // picClose
             // 
             this.picClose.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_multiply_50;
@@ -194,6 +184,16 @@
             this.picClose.TabStop = false;
             this.guna2HtmlToolTip1.SetToolTip(this.picClose, "Close");
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ComputerShopManagementSystem.Properties.Resources.Tech_Haven_ico;
+            this.pictureBox3.Location = new System.Drawing.Point(323, 79);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(327, 327);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -231,8 +231,8 @@
             this.Text = "Computer Shop Management System | Log In";
             ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHide)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
