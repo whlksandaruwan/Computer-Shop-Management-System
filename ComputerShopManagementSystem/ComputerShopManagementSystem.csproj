@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer.ico" />
+    <Content Include="SQLQuery1.sql" />
     <None Include="Resources\20106542.jpg" />
     <None Include="Resources\icons8-eye-30.png" />
     <None Include="Resources\icons8-hide-50.png" />
