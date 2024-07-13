@@ -45,13 +45,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.IblTimeAndDate = new System.Windows.Forms.Label();
             this.IblUsername = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnlCenter = new System.Windows.Forms.Panel();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
-            this.IblTimeAndDate = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -76,7 +76,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 560);
+            this.panel1.Size = new System.Drawing.Size(234, 605);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -96,7 +96,7 @@
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.btnClose.Image = global::ComputerShopManagementSystem.Properties.Resources.logout_256x256;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(18, 505);
+            this.btnClose.Location = new System.Drawing.Point(18, 550);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(200, 38);
             this.btnClose.TabIndex = 0;
@@ -221,7 +221,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 119);
+            this.label2.Location = new System.Drawing.Point(25, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(184, 25);
             this.label2.TabIndex = 0;
@@ -265,6 +265,17 @@
             this.panel2.Size = new System.Drawing.Size(747, 61);
             this.panel2.TabIndex = 0;
             // 
+            // IblTimeAndDate
+            // 
+            this.IblTimeAndDate.AutoSize = true;
+            this.IblTimeAndDate.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IblTimeAndDate.Location = new System.Drawing.Point(466, 22);
+            this.IblTimeAndDate.Name = "IblTimeAndDate";
+            this.IblTimeAndDate.Size = new System.Drawing.Size(32, 25);
+            this.IblTimeAndDate.TabIndex = 0;
+            this.IblTimeAndDate.Text = "{?}";
+            this.IblTimeAndDate.Click += new System.EventHandler(this.label4_Click);
+            // 
             // IblUsername
             // 
             this.IblUsername.AutoSize = true;
@@ -289,7 +300,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(234, 525);
+            this.panel3.Location = new System.Drawing.Point(234, 570);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(747, 35);
             this.panel3.TabIndex = 0;
@@ -300,7 +311,7 @@
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCenter.Location = new System.Drawing.Point(234, 61);
             this.pnlCenter.Name = "pnlCenter";
-            this.pnlCenter.Size = new System.Drawing.Size(747, 464);
+            this.pnlCenter.Size = new System.Drawing.Size(747, 509);
             this.pnlCenter.TabIndex = 0;
             // 
             // userControlDashboard1
@@ -309,30 +320,19 @@
             this.userControlDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControlDashboard1.Location = new System.Drawing.Point(0, 0);
             this.userControlDashboard1.Name = "userControlDashboard1";
-            this.userControlDashboard1.Size = new System.Drawing.Size(747, 464);
+            this.userControlDashboard1.Size = new System.Drawing.Size(747, 509);
             this.userControlDashboard1.TabIndex = 0;
             // 
             // timerDateAndTime
             // 
             this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
-            // IblTimeAndDate
-            // 
-            this.IblTimeAndDate.AutoSize = true;
-            this.IblTimeAndDate.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IblTimeAndDate.Location = new System.Drawing.Point(466, 22);
-            this.IblTimeAndDate.Name = "IblTimeAndDate";
-            this.IblTimeAndDate.Size = new System.Drawing.Size(32, 25);
-            this.IblTimeAndDate.TabIndex = 0;
-            this.IblTimeAndDate.Text = "{?}";
-            this.IblTimeAndDate.Click += new System.EventHandler(this.label4_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(981, 560);
+            this.ClientSize = new System.Drawing.Size(981, 605);
             this.Controls.Add(this.pnlCenter);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
