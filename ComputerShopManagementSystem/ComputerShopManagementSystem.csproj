@@ -145,6 +145,16 @@
     <None Include="Resources\orders.256x2481.png" />
     <None Include="Resources\cart.256x242.png" />
     <None Include="Resources\money-bag-finance.206x256.png" />
+    <None Include="Resources\computer %281%29.png" />
+    <None Include="Resources\icons8-dashboard-50.png" />
+    <None Include="Resources\icons8-brand-50.png" />
+    <None Include="Resources\icons8-brand-501.png" />
+    <None Include="Resources\icons8-dashboard-501.png" />
+    <None Include="Resources\icons8-category-50.png" />
+    <None Include="Resources\icons8-product-50.png" />
+    <None Include="Resources\icons8-list-25.png" />
+    <None Include="Resources\icons8-report-50.png" />
+    <None Include="Resources\icons8-user-50.png" />
     <Content Include="SQLQuery1.sql" />
     <None Include="Resources\20106542.jpg" />
     <None Include="Resources\icons8-eye-30.png" />

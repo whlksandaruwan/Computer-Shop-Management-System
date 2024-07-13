@@ -106,5 +106,10 @@ namespace ComputerShopManagementSystem.PAL
         {
 
         }
+
+        private void userControlDashboard1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
