@@ -31,17 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlMove = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.IblUsername = new System.Windows.Forms.Label();
-            this.IblTimeAndDate = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pnlCenter = new System.Windows.Forms.Panel();
-            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.btnClose = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
@@ -50,12 +40,21 @@
             this.btnCategory = new System.Windows.Forms.Button();
             this.btnBrand = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.IblUsername = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlCenter = new System.Windows.Forms.Panel();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
+            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.pnlCenter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,26 +79,6 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Managment System";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 91);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Computer Shop";
-            // 
             // pnlMove
             // 
             this.pnlMove.BackColor = System.Drawing.Color.White;
@@ -107,76 +86,6 @@
             this.pnlMove.Name = "pnlMove";
             this.pnlMove.Size = new System.Drawing.Size(6, 38);
             this.pnlMove.TabIndex = 0;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 3;
-            this.guna2Elipse1.TargetControl = this.pnlMove;
-            // 
-            // panel2
-            // 
-            this.panel2.AccessibleRole = System.Windows.Forms.AccessibleRole.Clock;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.panel2.Controls.Add(this.IblTimeAndDate);
-            this.panel2.Controls.Add(this.IblUsername);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(234, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(747, 61);
-            this.panel2.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(69, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Welcome : ";
-            // 
-            // IblUsername
-            // 
-            this.IblUsername.AutoSize = true;
-            this.IblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IblUsername.Location = new System.Drawing.Point(182, 22);
-            this.IblUsername.Name = "IblUsername";
-            this.IblUsername.Size = new System.Drawing.Size(32, 25);
-            this.IblUsername.TabIndex = 0;
-            this.IblUsername.Text = "{?}";
-            // 
-            // IblTimeAndDate
-            // 
-            this.IblTimeAndDate.AutoSize = true;
-            this.IblTimeAndDate.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IblTimeAndDate.Location = new System.Drawing.Point(708, 21);
-            this.IblTimeAndDate.Name = "IblTimeAndDate";
-            this.IblTimeAndDate.Size = new System.Drawing.Size(32, 25);
-            this.IblTimeAndDate.TabIndex = 0;
-            this.IblTimeAndDate.Text = "{?}";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(234, 525);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(747, 35);
-            this.panel3.TabIndex = 0;
-            // 
-            // pnlCenter
-            // 
-            this.pnlCenter.Controls.Add(this.userControlDashboard1);
-            this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCenter.Location = new System.Drawing.Point(234, 61);
-            this.pnlCenter.Name = "pnlCenter";
-            this.pnlCenter.Size = new System.Drawing.Size(747, 464);
-            this.pnlCenter.TabIndex = 0;
-            // 
-            // timerDateAndTime
-            // 
-            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
             // btnClose
             // 
@@ -307,6 +216,26 @@
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(34, 119);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(184, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Managment System";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(42, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Computer Shop";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ComputerShopManagementSystem.Properties.Resources.computer;
@@ -317,6 +246,61 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 3;
+            this.guna2Elipse1.TargetControl = this.pnlMove;
+            // 
+            // panel2
+            // 
+            this.panel2.AccessibleRole = System.Windows.Forms.AccessibleRole.Clock;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.panel2.Controls.Add(this.IblUsername);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(234, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(747, 61);
+            this.panel2.TabIndex = 0;
+            // 
+            // IblUsername
+            // 
+            this.IblUsername.AutoSize = true;
+            this.IblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IblUsername.Location = new System.Drawing.Point(182, 22);
+            this.IblUsername.Name = "IblUsername";
+            this.IblUsername.Size = new System.Drawing.Size(32, 25);
+            this.IblUsername.TabIndex = 0;
+            this.IblUsername.Text = "{?}";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(69, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(107, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Welcome : ";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(234, 525);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(747, 35);
+            this.panel3.TabIndex = 0;
+            // 
+            // pnlCenter
+            // 
+            this.pnlCenter.Controls.Add(this.userControlDashboard1);
+            this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCenter.Location = new System.Drawing.Point(234, 61);
+            this.pnlCenter.Name = "pnlCenter";
+            this.pnlCenter.Size = new System.Drawing.Size(747, 464);
+            this.pnlCenter.TabIndex = 0;
+            // 
             // userControlDashboard1
             // 
             this.userControlDashboard1.BackColor = System.Drawing.Color.White;
@@ -325,6 +309,10 @@
             this.userControlDashboard1.Name = "userControlDashboard1";
             this.userControlDashboard1.Size = new System.Drawing.Size(747, 464);
             this.userControlDashboard1.TabIndex = 0;
+            // 
+            // timerDateAndTime
+            // 
+            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
             // FormMain
             // 
@@ -345,10 +333,10 @@
             this.Load += new System.EventHandler(this.FromMain);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.pnlCenter.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -372,7 +360,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label IblUsername;
-        private System.Windows.Forms.Label IblTimeAndDate;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnlCenter;
         private System.Windows.Forms.Timer timerDateAndTime;
