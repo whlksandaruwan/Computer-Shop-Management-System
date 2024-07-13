@@ -77,6 +77,12 @@
     <Compile Include="PAL\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="PAL\UserControlDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\UserControlDashboard.Designer.cs">
+      <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Splash.cs">
@@ -90,6 +96,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PAL\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\UserControlDashboard.resx">
+      <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,6 +131,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer.ico" />
+    <None Include="Resources\dashboard-ea.256x256.png" />
+    <None Include="Resources\white-circle.256x256.png" />
+    <None Include="Resources\washing-machine.256x245.png" />
+    <None Include="Resources\view-financial-category-add.256x256.png" />
+    <None Include="Resources\orders.256x248.png" />
+    <None Include="Resources\report.239x256 %281%29.png" />
+    <None Include="Resources\people.256x256.png" />
+    <None Include="Resources\logout.256x256.png" />
+    <None Include="Resources\view-financial-category-add.256x2561.png" />
+    <None Include="Resources\washing-machine.256x2451.png" />
+    <None Include="Resources\washing-machine.256x2452.png" />
+    <None Include="Resources\orders.256x2481.png" />
+    <None Include="Resources\cart.256x242.png" />
+    <None Include="Resources\money-bag-finance.206x256.png" />
     <Content Include="SQLQuery1.sql" />
     <None Include="Resources\20106542.jpg" />
     <None Include="Resources\icons8-eye-30.png" />

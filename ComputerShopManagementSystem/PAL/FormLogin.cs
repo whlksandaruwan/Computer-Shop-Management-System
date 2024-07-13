@@ -70,6 +70,7 @@ namespace ComputerShopManagementSystem.PAL
                     {
                         this.Hide();
                         FormMain formMain = new FormMain();
+                        formMain.name = txtUsername.Text;
                         formMain.ShowDialog();
                         EmptyBox();
                         this.Show();

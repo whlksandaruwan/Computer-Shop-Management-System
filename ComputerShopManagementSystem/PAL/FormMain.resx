@@ -117,65 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8-eye-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-eye-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="washing-machine1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\washing-machine.256x2451.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tech-Haven.ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tech-Haven.ico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="report.239x256 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\report.239x256 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="washing-machine2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\washing-machine.256x2452.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dashboard-ea.256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dashboard-ea.256x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="washing-machine.256x245" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\washing-machine.256x245.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="20106542" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20106542.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="orders.256x248" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\orders.256x248.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="view-financial-category-add.256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\view-financial-category-add.256x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="view-financial-category-add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\view-financial-category-add.256x2561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-hide-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-hide-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="white-circle.256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\white-circle.256x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cart.256x242" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cart.256x242.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="people.256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\people.256x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="orders1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\orders.256x2481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-multiply-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-multiply-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logout.256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout.256x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="money-bag-finance.206x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money-bag-finance.206x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="timerDateAndTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>140, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
 </root>
