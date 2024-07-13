@@ -51,6 +51,7 @@
             this.pnlCenter = new System.Windows.Forms.Panel();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.IblTimeAndDate = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -255,6 +256,7 @@
             // 
             this.panel2.AccessibleRole = System.Windows.Forms.AccessibleRole.Clock;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.panel2.Controls.Add(this.IblTimeAndDate);
             this.panel2.Controls.Add(this.IblUsername);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -314,6 +316,17 @@
             // 
             this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
+            // IblTimeAndDate
+            // 
+            this.IblTimeAndDate.AutoSize = true;
+            this.IblTimeAndDate.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IblTimeAndDate.Location = new System.Drawing.Point(466, 22);
+            this.IblTimeAndDate.Name = "IblTimeAndDate";
+            this.IblTimeAndDate.Size = new System.Drawing.Size(32, 25);
+            this.IblTimeAndDate.TabIndex = 0;
+            this.IblTimeAndDate.Text = "{?}";
+            this.IblTimeAndDate.Click += new System.EventHandler(this.label4_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,5 +377,6 @@
         private System.Windows.Forms.Panel pnlCenter;
         private System.Windows.Forms.Timer timerDateAndTime;
         private UserControlDashboard userControlDashboard1;
+        private System.Windows.Forms.Label IblTimeAndDate;
     }
 }
