@@ -57,10 +57,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(30, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(60, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 13);
+            this.label1.Size = new System.Drawing.Size(464, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Computer Shop Management System | Log In";
             // 
@@ -68,10 +68,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(106, 245);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(212, 471);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 15);
+            this.label2.Size = new System.Drawing.Size(137, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Username :";
             // 
@@ -79,20 +79,20 @@
             // 
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(109, 263);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Location = new System.Drawing.Point(218, 506);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(274, 23);
+            this.txtUsername.Size = new System.Drawing.Size(546, 39);
             this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(109, 311);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Location = new System.Drawing.Point(218, 598);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(254, 23);
+            this.txtPassword.Size = new System.Drawing.Size(506, 39);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -100,10 +100,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(106, 293);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(212, 563);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 15);
+            this.label3.Size = new System.Drawing.Size(135, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Password  :";
             // 
@@ -112,10 +112,10 @@
             this.lblForgotPassword.AutoSize = true;
             this.lblForgotPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblForgotPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
-            this.lblForgotPassword.Location = new System.Drawing.Point(193, 361);
-            this.lblForgotPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblForgotPassword.Location = new System.Drawing.Point(386, 694);
+            this.lblForgotPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblForgotPassword.Name = "lblForgotPassword";
-            this.lblForgotPassword.Size = new System.Drawing.Size(100, 15);
+            this.lblForgotPassword.Size = new System.Drawing.Size(205, 32);
             this.lblForgotPassword.TabIndex = 0;
             this.lblForgotPassword.Text = "Forgot Password?";
             this.lblForgotPassword.Click += new System.EventHandler(this.lblForgotPassword_Click);
@@ -127,10 +127,10 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(109, 405);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Location = new System.Drawing.Point(218, 779);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(274, 34);
+            this.btnLogin.Size = new System.Drawing.Size(548, 65);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Log In";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -157,10 +157,10 @@
             // 
             this.picShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picShow.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_eye_30;
-            this.picShow.Location = new System.Drawing.Point(362, 311);
-            this.picShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picShow.Location = new System.Drawing.Point(724, 598);
+            this.picShow.Margin = new System.Windows.Forms.Padding(4);
             this.picShow.Name = "picShow";
-            this.picShow.Size = new System.Drawing.Size(22, 23);
+            this.picShow.Size = new System.Drawing.Size(42, 42);
             this.picShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picShow.TabIndex = 9;
             this.picShow.TabStop = false;
@@ -171,10 +171,10 @@
             // 
             this.picHide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picHide.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_hide_50;
-            this.picHide.Location = new System.Drawing.Point(362, 311);
-            this.picHide.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picHide.Location = new System.Drawing.Point(724, 598);
+            this.picHide.Margin = new System.Windows.Forms.Padding(4);
             this.picHide.Name = "picHide";
-            this.picHide.Size = new System.Drawing.Size(22, 23);
+            this.picHide.Size = new System.Drawing.Size(42, 42);
             this.picHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picHide.TabIndex = 8;
             this.picHide.TabStop = false;
@@ -185,10 +185,10 @@
             // picClose
             // 
             this.picClose.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_multiply_50;
-            this.picClose.Location = new System.Drawing.Point(472, 6);
-            this.picClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picClose.Location = new System.Drawing.Point(944, 12);
+            this.picClose.Margin = new System.Windows.Forms.Padding(4);
             this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(22, 23);
+            this.picClose.Size = new System.Drawing.Size(44, 44);
             this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picClose.TabIndex = 2;
             this.picClose.TabStop = false;
@@ -198,10 +198,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ComputerShopManagementSystem.Properties.Resources.Tech_Haven_ico;
-            this.pictureBox3.Location = new System.Drawing.Point(162, 41);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(324, 79);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(164, 170);
+            this.pictureBox3.Size = new System.Drawing.Size(328, 327);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -209,20 +209,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ComputerShopManagementSystem.Properties.Resources.computer;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox1.Size = new System.Drawing.Size(42, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(500, 504);
+            this.ClientSize = new System.Drawing.Size(1000, 969);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblForgotPassword);
             this.Controls.Add(this.txtPassword);
@@ -238,10 +238,11 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Shop Management System | Log In";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
