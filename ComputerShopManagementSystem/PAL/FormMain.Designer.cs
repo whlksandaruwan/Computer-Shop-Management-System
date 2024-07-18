@@ -41,7 +41,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnlCenter = new System.Windows.Forms.Panel();
-            this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnClose = new System.Windows.Forms.Button();
@@ -53,6 +52,8 @@
             this.btnBrand = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
+            this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlCenter.SuspendLayout();
@@ -84,7 +85,7 @@
             // pnlMove
             // 
             this.pnlMove.BackColor = System.Drawing.Color.White;
-            this.pnlMove.Location = new System.Drawing.Point(15, 197);
+            this.pnlMove.Location = new System.Drawing.Point(12, 197);
             this.pnlMove.Name = "pnlMove";
             this.pnlMove.Size = new System.Drawing.Size(6, 38);
             this.pnlMove.TabIndex = 0;
@@ -169,22 +170,13 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlBrand1);
             this.pnlCenter.Controls.Add(this.userControlDashboard1);
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCenter.Location = new System.Drawing.Point(234, 61);
             this.pnlCenter.Name = "pnlCenter";
             this.pnlCenter.Size = new System.Drawing.Size(747, 509);
             this.pnlCenter.TabIndex = 0;
-            // 
-            // userControlDashboard1
-            // 
-            this.userControlDashboard1.BackColor = System.Drawing.Color.White;
-            this.userControlDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlDashboard1.Location = new System.Drawing.Point(0, 0);
-            this.userControlDashboard1.Name = "userControlDashboard1";
-            this.userControlDashboard1.Size = new System.Drawing.Size(747, 509);
-            this.userControlDashboard1.TabIndex = 0;
-            this.userControlDashboard1.Load += new System.EventHandler(this.userControlDashboard1_Load);
             // 
             // timerDateAndTime
             // 
@@ -316,7 +308,7 @@
             this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.btnDashboard.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_dashboard_501;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(20, 197);
+            this.btnDashboard.Location = new System.Drawing.Point(18, 197);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(200, 38);
             this.btnDashboard.TabIndex = 0;
@@ -334,6 +326,25 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // userControlDashboard1
+            // 
+            this.userControlDashboard1.BackColor = System.Drawing.Color.White;
+            this.userControlDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlDashboard1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDashboard1.Name = "userControlDashboard1";
+            this.userControlDashboard1.Size = new System.Drawing.Size(747, 509);
+            this.userControlDashboard1.TabIndex = 0;
+            this.userControlDashboard1.Load += new System.EventHandler(this.userControlDashboard1_Load);
+            // 
+            // userControlBrand1
+            // 
+            this.userControlBrand1.BackColor = System.Drawing.Color.White;
+            this.userControlBrand1.Location = new System.Drawing.Point(0, 0);
+            this.userControlBrand1.Name = "userControlBrand1";
+            this.userControlBrand1.Size = new System.Drawing.Size(747, 646);
+            this.userControlBrand1.TabIndex = 0;
+            this.userControlBrand1.Visible = false;
             // 
             // FormMain
             // 
@@ -387,5 +398,6 @@
         private UserControlDashboard userControlDashboard1;
         private System.Windows.Forms.Label IblTimeAndDate;
         private System.Windows.Forms.ImageList imageList1;
+        private UserControlBrand userControlBrand1;
     }
 }

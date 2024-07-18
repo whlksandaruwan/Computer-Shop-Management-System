@@ -1,0 +1,7 @@
+﻿CREATE TABLE Brand
+(
+	Brand_Id INT IDENTITY(1, 1),
+	Brand_Name VARCHAR(150) UNIQUE NULL,
+	Brand_Status VARCHAR(15),
+	CONSTRAINT PK_Brand PRIMARY KEY(Brand_Id)
+);
