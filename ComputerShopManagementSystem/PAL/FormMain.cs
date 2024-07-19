@@ -17,10 +17,14 @@ namespace ComputerShopManagementSystem.PAL
         public FormMain()
         {
             InitializeComponent();
+            MovePanel(btnDashboard);
+            userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
+            userControlDashboard1.Visible = true;
         }
 
 
-        private void MoveOanel(Control btn)
+        private void MovePanel(Control btn)
         {
             pnlMove.Top = btn.Top;
             pnlMove.Height = btn.Height;
@@ -45,11 +49,7 @@ namespace ComputerShopManagementSystem.PAL
             }
         }
 
-        private void MovePanel(Button btnClose)
-        {
-            pnlMove.Top = btnBrand.Top;
-            pnlMove.Height = btnBrand.Height;
-        }
+        
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
