@@ -110,6 +110,12 @@
     <Compile Include="PAL\UserControlDashboard.Designer.cs">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="PAL\UserControlProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\UserControlProduct.Designer.cs">
+      <DependentUpon>UserControlProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Splash.cs">
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PAL\UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\UserControlProduct.resx">
+      <DependentUpon>UserControlProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
