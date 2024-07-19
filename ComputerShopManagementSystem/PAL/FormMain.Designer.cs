@@ -52,8 +52,9 @@
             this.btnBrand = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
+            this.userControlCategory1 = new ComputerShopManagementSystem.PAL.UserControlCategory();
             this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
+            this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlCenter.SuspendLayout();
@@ -170,6 +171,7 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlCategory1);
             this.pnlCenter.Controls.Add(this.userControlBrand1);
             this.pnlCenter.Controls.Add(this.userControlDashboard1);
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -327,6 +329,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // userControlCategory1
+            // 
+            this.userControlCategory1.BackColor = System.Drawing.Color.White;
+            this.userControlCategory1.Location = new System.Drawing.Point(0, 6);
+            this.userControlCategory1.Name = "userControlCategory1";
+            this.userControlCategory1.Size = new System.Drawing.Size(747, 581);
+            this.userControlCategory1.TabIndex = 0;
+            // 
+            // userControlBrand1
+            // 
+            this.userControlBrand1.BackColor = System.Drawing.Color.White;
+            this.userControlBrand1.Location = new System.Drawing.Point(0, 0);
+            this.userControlBrand1.Name = "userControlBrand1";
+            this.userControlBrand1.Size = new System.Drawing.Size(747, 646);
+            this.userControlBrand1.TabIndex = 0;
+            // 
             // userControlDashboard1
             // 
             this.userControlDashboard1.BackColor = System.Drawing.Color.White;
@@ -336,15 +354,6 @@
             this.userControlDashboard1.Size = new System.Drawing.Size(747, 509);
             this.userControlDashboard1.TabIndex = 0;
             this.userControlDashboard1.Load += new System.EventHandler(this.userControlDashboard1_Load);
-            // 
-            // userControlBrand1
-            // 
-            this.userControlBrand1.BackColor = System.Drawing.Color.White;
-            this.userControlBrand1.Location = new System.Drawing.Point(0, 0);
-            this.userControlBrand1.Name = "userControlBrand1";
-            this.userControlBrand1.Size = new System.Drawing.Size(747, 646);
-            this.userControlBrand1.TabIndex = 0;
-            this.userControlBrand1.Visible = false;
             // 
             // FormMain
             // 
@@ -399,5 +408,6 @@
         private System.Windows.Forms.Label IblTimeAndDate;
         private System.Windows.Forms.ImageList imageList1;
         private UserControlBrand userControlBrand1;
+        private UserControlCategory userControlCategory1;
     }
 }

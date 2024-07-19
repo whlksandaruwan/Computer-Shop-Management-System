@@ -55,6 +55,7 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnDashboard);
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
             userControlDashboard1.Visible = true;
         }
 
@@ -62,6 +63,7 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnBrand);
             userControlDashboard1.Visible = false;
+            userControlCategory1.Visible = false;
             userControlBrand1.EmptyBox();
             userControlBrand1.Visible = true;
         }
@@ -70,6 +72,9 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnCategory);
             userControlDashboard1.Visible = false;
+            userControlBrand1.Visible= false;
+            userControlCategory1.EmptyBox();
+            userControlCategory1.Visible = true;
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
@@ -77,6 +82,7 @@ namespace ComputerShopManagementSystem.PAL
             MovePanel(btnProduct);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
         }
 
         private void btnOrders_Click(object sender, EventArgs e)
@@ -84,6 +90,7 @@ namespace ComputerShopManagementSystem.PAL
             MovePanel(btnOrders);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -91,6 +98,7 @@ namespace ComputerShopManagementSystem.PAL
             MovePanel(btnReport);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
@@ -98,6 +106,7 @@ namespace ComputerShopManagementSystem.PAL
             MovePanel(btnUsers);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
         }
 
         private void timerDateAndTime_Tick(object sender, EventArgs e)

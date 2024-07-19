@@ -164,5 +164,10 @@ namespace ComputerShopManagementSystem.PAL
         {
             EmptyBox1();
         }
+
+        private void tpManageBrand_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
