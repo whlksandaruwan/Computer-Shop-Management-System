@@ -55,9 +55,10 @@
             this.btnResetPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetPassword.ForeColor = System.Drawing.Color.White;
-            this.btnResetPassword.Location = new System.Drawing.Point(218, 777);
+            this.btnResetPassword.Location = new System.Drawing.Point(109, 404);
+            this.btnResetPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(547, 65);
+            this.btnResetPassword.Size = new System.Drawing.Size(274, 34);
             this.btnResetPassword.TabIndex = 3;
             this.btnResetPassword.Text = "Reset Password";
             this.btnResetPassword.UseVisualStyleBackColor = false;
@@ -67,18 +68,20 @@
             // 
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(218, 633);
+            this.txtEmail.Location = new System.Drawing.Point(109, 329);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(547, 39);
+            this.txtEmail.Size = new System.Drawing.Size(274, 23);
             this.txtEmail.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(212, 598);
+            this.label3.Location = new System.Drawing.Point(106, 311);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 32);
+            this.label3.Size = new System.Drawing.Size(42, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "Email :";
             // 
@@ -86,18 +89,20 @@
             // 
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(218, 541);
+            this.txtUsername.Location = new System.Drawing.Point(109, 281);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(547, 39);
+            this.txtUsername.Size = new System.Drawing.Size(274, 23);
             this.txtUsername.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(212, 506);
+            this.label2.Location = new System.Drawing.Point(106, 263);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 32);
+            this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Username :";
             // 
@@ -105,18 +110,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(60, 18);
+            this.label1.Location = new System.Drawing.Point(30, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(566, 30);
+            this.label1.Size = new System.Drawing.Size(292, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Computer Shop Management System | Forgot Password";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ComputerShopManagementSystem.Properties.Resources._20106542;
-            this.pictureBox3.Location = new System.Drawing.Point(329, 91);
+            this.pictureBox3.Location = new System.Drawing.Point(164, 47);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(327, 327);
+            this.pictureBox3.Size = new System.Drawing.Size(164, 170);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
@@ -124,9 +131,10 @@
             // picClose
             // 
             this.picClose.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_multiply_50;
-            this.picClose.Location = new System.Drawing.Point(943, 12);
+            this.picClose.Location = new System.Drawing.Point(472, 6);
+            this.picClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(45, 45);
+            this.picClose.Size = new System.Drawing.Size(22, 23);
             this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picClose.TabIndex = 17;
             this.picClose.TabStop = false;
@@ -136,9 +144,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ComputerShopManagementSystem.Properties.Resources.computer;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(21, 22);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -162,10 +171,10 @@
             // 
             // FormForgotPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1000, 970);
+            this.ClientSize = new System.Drawing.Size(500, 478);
             this.Controls.Add(this.btnResetPassword);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label3);
@@ -177,6 +186,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormForgotPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";

@@ -173,6 +173,16 @@ namespace ComputerShopManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_folder_48__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-folder-48 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_hide_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-hide-50", resourceCulture);

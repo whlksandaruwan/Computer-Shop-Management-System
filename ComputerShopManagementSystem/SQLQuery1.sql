@@ -28,6 +28,20 @@ CREATE TABLE Category
 	CONSTRAINT PK_Category PRIMARY KEY (Category_Id)
 );
 
+CREATE TABLE Product
+(
+	Product_Id INT IDENTITY(1, 1),
+	Product_Name VARCHAR(150) UNIQUE,
+	Product_Image IMAGE,
+	Product_Rate INT,
+	Product_Quantity INT,
+	Product_Brand VARCHAR(150),
+	Product_Category VARCHAR(150),
+	Product_Status VARCHAR(15),
+	CONSTRAINT PK_Product PRIMARY KEY (Product_Id)
+);
+
 SELECT * FROM Users;
 SELECT * FROM Brand;
 SELECT * FROM Category;
+SELECT * FROM Product;

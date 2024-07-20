@@ -173,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer.ico" />
+    <None Include="Resources\icons8-folder-48 %281%29.png" />
     <None Include="Resources\icons8-search-50.png" />
     <None Include="Resources\dashboard-ea.256x256.png" />
     <None Include="Resources\white-circle.256x256.png" />
