@@ -110,6 +110,12 @@
     <Compile Include="PAL\UserControlDashboard.Designer.cs">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="PAL\UserControlOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\UserControlOrder.Designer.cs">
+      <DependentUpon>UserControlOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="PAL\UserControlProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <EmbeddedResource Include="PAL\UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PAL\UserControlOrder.resx">
+      <DependentUpon>UserControlOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PAL\UserControlProduct.resx">
       <DependentUpon>UserControlProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +182,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer.ico" />
+    <None Include="Resources\icons8-print-501.png" />
+    <None Include="Resources\icons8-print-50.png" />
+    <None Include="Resources\icons8-delete-24.png" />
+    <None Include="Resources\icons8-add-30.png" />
     <None Include="Resources\icons8-folder-48 %281%29.png" />
     <None Include="Resources\icons8-search-50.png" />
     <None Include="Resources\dashboard-ea.256x256.png" />
