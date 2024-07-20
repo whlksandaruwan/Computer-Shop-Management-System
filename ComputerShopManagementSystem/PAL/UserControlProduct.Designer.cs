@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tcProduct = new System.Windows.Forms.TabControl();
             this.tpAddProduct = new System.Windows.Forms.TabPage();
-            this.tpManageProduct = new System.Windows.Forms.TabPage();
-            this.tpOptions = new System.Windows.Forms.TabPage();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.picPhoto = new System.Windows.Forms.PictureBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbBrand = new System.Windows.Forms.ComboBox();
@@ -46,21 +49,11 @@
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnBrowse = new System.Windows.Forms.Button();
-            this.picPhoto = new System.Windows.Forms.PictureBox();
+            this.tpManageProduct = new System.Windows.Forms.TabPage();
             this.txtSearchProductName = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.picSearch = new System.Windows.Forms.PictureBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +62,11 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.picSearch = new System.Windows.Forms.PictureBox();
+            this.tpOptions = new System.Windows.Forms.TabPage();
+            this.btnRemove = new System.Windows.Forms.Button();
             this.btnBrowse1 = new System.Windows.Forms.Button();
             this.picPhoto1 = new System.Windows.Forms.PictureBox();
             this.btnChange = new System.Windows.Forms.Button();
@@ -85,20 +83,22 @@
             this.txtProductName1 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.btnRemove = new System.Windows.Forms.Button();
             this.tcProduct.SuspendLayout();
             this.tpAddProduct.SuspendLayout();
-            this.tpManageProduct.SuspendLayout();
-            this.tpOptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuatity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPhoto)).BeginInit();
+            this.tpManageProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
+            this.tpOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPhoto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRate1)).BeginInit();
@@ -145,50 +145,81 @@
             this.tpAddProduct.TabIndex = 0;
             this.tpAddProduct.Text = "Add Product";
             this.tpAddProduct.UseVisualStyleBackColor = true;
+            this.tpAddProduct.Enter += new System.EventHandler(this.tpAddProduct_Enter);
             // 
-            // tpManageProduct
+            // btnBrowse
             // 
-            this.tpManageProduct.Controls.Add(this.txtSearchProductName);
-            this.tpManageProduct.Controls.Add(this.lblTotal);
-            this.tpManageProduct.Controls.Add(this.label6);
-            this.tpManageProduct.Controls.Add(this.dgvProduct);
-            this.tpManageProduct.Controls.Add(this.label4);
-            this.tpManageProduct.Controls.Add(this.label5);
-            this.tpManageProduct.Controls.Add(this.picSearch);
-            this.tpManageProduct.Location = new System.Drawing.Point(4, 4);
-            this.tpManageProduct.Name = "tpManageProduct";
-            this.tpManageProduct.Padding = new System.Windows.Forms.Padding(3);
-            this.tpManageProduct.Size = new System.Drawing.Size(710, 411);
-            this.tpManageProduct.TabIndex = 1;
-            this.tpManageProduct.Text = "Manage Product";
-            this.tpManageProduct.UseVisualStyleBackColor = true;
+            this.btnBrowse.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.btnBrowse.FlatAppearance.BorderSize = 0;
+            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowse.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.ForeColor = System.Drawing.Color.White;
+            this.btnBrowse.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_folder_48__1_;
+            this.btnBrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBrowse.Location = new System.Drawing.Point(537, 268);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(109, 38);
+            this.btnBrowse.TabIndex = 8;
+            this.btnBrowse.Text = " Browse";
+            this.btnBrowse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBrowse.UseVisualStyleBackColor = false;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
-            // tpOptions
+            // picPhoto
             // 
-            this.tpOptions.Controls.Add(this.btnRemove);
-            this.tpOptions.Controls.Add(this.btnBrowse1);
-            this.tpOptions.Controls.Add(this.picPhoto1);
-            this.tpOptions.Controls.Add(this.btnChange);
-            this.tpOptions.Controls.Add(this.cmbStatus1);
-            this.tpOptions.Controls.Add(this.label2);
-            this.tpOptions.Controls.Add(this.cmbCategory1);
-            this.tpOptions.Controls.Add(this.label3);
-            this.tpOptions.Controls.Add(this.cmbBrand1);
-            this.tpOptions.Controls.Add(this.label13);
-            this.tpOptions.Controls.Add(this.nudQuantity1);
-            this.tpOptions.Controls.Add(this.nudRate1);
-            this.tpOptions.Controls.Add(this.label14);
-            this.tpOptions.Controls.Add(this.label15);
-            this.tpOptions.Controls.Add(this.txtProductName1);
-            this.tpOptions.Controls.Add(this.label16);
-            this.tpOptions.Controls.Add(this.label17);
-            this.tpOptions.Location = new System.Drawing.Point(4, 4);
-            this.tpOptions.Name = "tpOptions";
-            this.tpOptions.Padding = new System.Windows.Forms.Padding(3);
-            this.tpOptions.Size = new System.Drawing.Size(710, 411);
-            this.tpOptions.TabIndex = 2;
-            this.tpOptions.Text = "Options";
-            this.tpOptions.UseVisualStyleBackColor = true;
+            this.picPhoto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picPhoto.Location = new System.Drawing.Point(516, 82);
+            this.picPhoto.Name = "picPhoto";
+            this.picPhoto.Size = new System.Drawing.Size(143, 158);
+            this.picPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPhoto.TabIndex = 27;
+            this.picPhoto.TabStop = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(55, 349);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(109, 38);
+            this.btnAdd.TabIndex = 7;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // cmbStatus
+            // 
+            this.cmbStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Items.AddRange(new object[] {
+            "--SELECT--",
+            "Available",
+            "Not Available"});
+            this.cmbStatus.Location = new System.Drawing.Point(55, 298);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(291, 23);
+            this.cmbStatus.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(52, 280);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Status:";
             // 
             // cmbCategory
             // 
@@ -328,86 +359,23 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "../Add Product";
             // 
-            // cmbStatus
+            // tpManageProduct
             // 
-            this.cmbStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Items.AddRange(new object[] {
-            "--SELECT--",
-            "Available",
-            "Not Available"});
-            this.cmbStatus.Location = new System.Drawing.Point(55, 298);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(291, 23);
-            this.cmbStatus.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(52, 280);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Status:";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(55, 349);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(109, 38);
-            this.btnAdd.TabIndex = 7;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this.btnAdd;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.btnBrowse;
-            // 
-            // btnBrowse
-            // 
-            this.btnBrowse.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.btnBrowse.FlatAppearance.BorderSize = 0;
-            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBrowse.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_folder_48__1_;
-            this.btnBrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBrowse.Location = new System.Drawing.Point(537, 268);
-            this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(109, 38);
-            this.btnBrowse.TabIndex = 8;
-            this.btnBrowse.Text = " Browse";
-            this.btnBrowse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBrowse.UseVisualStyleBackColor = false;
-            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
-            // 
-            // picPhoto
-            // 
-            this.picPhoto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picPhoto.Location = new System.Drawing.Point(516, 82);
-            this.picPhoto.Name = "picPhoto";
-            this.picPhoto.Size = new System.Drawing.Size(143, 158);
-            this.picPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPhoto.TabIndex = 27;
-            this.picPhoto.TabStop = false;
+            this.tpManageProduct.Controls.Add(this.txtSearchProductName);
+            this.tpManageProduct.Controls.Add(this.lblTotal);
+            this.tpManageProduct.Controls.Add(this.label6);
+            this.tpManageProduct.Controls.Add(this.dgvProduct);
+            this.tpManageProduct.Controls.Add(this.label4);
+            this.tpManageProduct.Controls.Add(this.label5);
+            this.tpManageProduct.Controls.Add(this.picSearch);
+            this.tpManageProduct.Location = new System.Drawing.Point(4, 4);
+            this.tpManageProduct.Name = "tpManageProduct";
+            this.tpManageProduct.Padding = new System.Windows.Forms.Padding(3);
+            this.tpManageProduct.Size = new System.Drawing.Size(710, 411);
+            this.tpManageProduct.TabIndex = 1;
+            this.tpManageProduct.Text = "Manage Product";
+            this.tpManageProduct.UseVisualStyleBackColor = true;
+            this.tpManageProduct.Enter += new System.EventHandler(this.tpManageProduct_Enter);
             // 
             // txtSearchProductName
             // 
@@ -417,6 +385,7 @@
             this.txtSearchProductName.Name = "txtSearchProductName";
             this.txtSearchProductName.Size = new System.Drawing.Size(268, 23);
             this.txtSearchProductName.TabIndex = 1;
+            this.txtSearchProductName.TextChanged += new System.EventHandler(this.txtSearchProductName_TextChanged);
             // 
             // lblTotal
             // 
@@ -455,14 +424,14 @@
             this.dgvProduct.BackgroundColor = System.Drawing.Color.White;
             this.dgvProduct.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -473,14 +442,14 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProduct.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProduct.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProduct.EnableHeadersVisualStyles = false;
             this.dgvProduct.Location = new System.Drawing.Point(17, 144);
             this.dgvProduct.MultiSelect = false;
@@ -494,45 +463,7 @@
             this.dgvProduct.ShowRowErrors = false;
             this.dgvProduct.Size = new System.Drawing.Size(676, 213);
             this.dgvProduct.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(200, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 15);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Product Name:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.label5.Location = new System.Drawing.Point(3, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 21);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "../Manage Product";
-            // 
-            // picSearch
-            // 
-            this.picSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSearch.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_search_50;
-            this.picSearch.Location = new System.Drawing.Point(470, 80);
-            this.picSearch.Name = "picSearch";
-            this.picSearch.Size = new System.Drawing.Size(23, 23);
-            this.picSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSearch.TabIndex = 19;
-            this.picSearch.TabStop = false;
-            this.picSearch.MouseHover += new System.EventHandler(this.picSearch_MouseHover);
+            this.dgvProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellClick);
             // 
             // Column1
             // 
@@ -590,6 +521,87 @@
             this.Column8.HeaderText = "Status";
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(200, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(87, 15);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Product Name:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.label5.Location = new System.Drawing.Point(3, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(146, 21);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "../Manage Product";
+            // 
+            // picSearch
+            // 
+            this.picSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSearch.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_search_50;
+            this.picSearch.Location = new System.Drawing.Point(470, 80);
+            this.picSearch.Name = "picSearch";
+            this.picSearch.Size = new System.Drawing.Size(23, 23);
+            this.picSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSearch.TabIndex = 19;
+            this.picSearch.TabStop = false;
+            this.picSearch.MouseHover += new System.EventHandler(this.picSearch_MouseHover);
+            // 
+            // tpOptions
+            // 
+            this.tpOptions.Controls.Add(this.btnRemove);
+            this.tpOptions.Controls.Add(this.btnBrowse1);
+            this.tpOptions.Controls.Add(this.picPhoto1);
+            this.tpOptions.Controls.Add(this.btnChange);
+            this.tpOptions.Controls.Add(this.cmbStatus1);
+            this.tpOptions.Controls.Add(this.label2);
+            this.tpOptions.Controls.Add(this.cmbCategory1);
+            this.tpOptions.Controls.Add(this.label3);
+            this.tpOptions.Controls.Add(this.cmbBrand1);
+            this.tpOptions.Controls.Add(this.label13);
+            this.tpOptions.Controls.Add(this.nudQuantity1);
+            this.tpOptions.Controls.Add(this.nudRate1);
+            this.tpOptions.Controls.Add(this.label14);
+            this.tpOptions.Controls.Add(this.label15);
+            this.tpOptions.Controls.Add(this.txtProductName1);
+            this.tpOptions.Controls.Add(this.label16);
+            this.tpOptions.Controls.Add(this.label17);
+            this.tpOptions.Location = new System.Drawing.Point(4, 4);
+            this.tpOptions.Name = "tpOptions";
+            this.tpOptions.Padding = new System.Windows.Forms.Padding(3);
+            this.tpOptions.Size = new System.Drawing.Size(710, 411);
+            this.tpOptions.TabIndex = 2;
+            this.tpOptions.Text = "Options";
+            this.tpOptions.UseVisualStyleBackColor = true;
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.Location = new System.Drawing.Point(240, 349);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(109, 38);
+            this.btnRemove.TabIndex = 8;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = false;
             // 
             // btnBrowse1
             // 
@@ -802,6 +814,14 @@
             this.label17.TabIndex = 0;
             this.label17.Text = "../Add Product";
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.btnAdd;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.btnBrowse;
+            // 
             // guna2Elipse3
             // 
             this.guna2Elipse3.TargetControl = this.btnChange;
@@ -816,23 +836,7 @@
             // 
             // openFileDialog
             // 
-            this.openFileDialog.FileName = "Upload Image";
             this.openFileDialog.Filter = "JPG|*.jpg|JPEG|*.jpeg|PNG|*.png";
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
-            this.btnRemove.FlatAppearance.BorderSize = 0;
-            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemove.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(240, 349);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(109, 38);
-            this.btnRemove.TabIndex = 8;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.UseVisualStyleBackColor = false;
             // 
             // UserControlProduct
             // 
@@ -845,15 +849,15 @@
             this.tcProduct.ResumeLayout(false);
             this.tpAddProduct.ResumeLayout(false);
             this.tpAddProduct.PerformLayout();
-            this.tpManageProduct.ResumeLayout(false);
-            this.tpManageProduct.PerformLayout();
-            this.tpOptions.ResumeLayout(false);
-            this.tpOptions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuatity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPhoto)).EndInit();
+            this.tpManageProduct.ResumeLayout(false);
+            this.tpManageProduct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
+            this.tpOptions.ResumeLayout(false);
+            this.tpOptions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPhoto1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRate1)).EndInit();

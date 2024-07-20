@@ -50,11 +50,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnlCenter = new System.Windows.Forms.Panel();
+            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.userControlCategory1 = new ComputerShopManagementSystem.PAL.UserControlCategory();
             this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
-            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.userControlProduct1 = new ComputerShopManagementSystem.PAL.UserControlProduct();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -311,6 +312,7 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlProduct1);
             this.pnlCenter.Controls.Add(this.userControlCategory1);
             this.pnlCenter.Controls.Add(this.userControlBrand1);
             this.pnlCenter.Controls.Add(this.userControlDashboard1);
@@ -319,6 +321,16 @@
             this.pnlCenter.Name = "pnlCenter";
             this.pnlCenter.Size = new System.Drawing.Size(747, 509);
             this.pnlCenter.TabIndex = 0;
+            // 
+            // timerDateAndTime
+            // 
+            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // userControlCategory1
             // 
@@ -346,15 +358,14 @@
             this.userControlDashboard1.TabIndex = 0;
             this.userControlDashboard1.Load += new System.EventHandler(this.userControlDashboard1_Load);
             // 
-            // timerDateAndTime
+            // userControlProduct1
             // 
-            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.userControlProduct1.BackColor = System.Drawing.Color.White;
+            this.userControlProduct1.Location = new System.Drawing.Point(0, 0);
+            this.userControlProduct1.Name = "userControlProduct1";
+            this.userControlProduct1.Size = new System.Drawing.Size(747, 646);
+            this.userControlProduct1.TabIndex = 0;
+            this.userControlProduct1.Visible = false;
             // 
             // FormMain
             // 
@@ -410,5 +421,6 @@
         private System.Windows.Forms.ImageList imageList1;
         private UserControlBrand userControlBrand1;
         private UserControlCategory userControlCategory1;
+        private UserControlProduct userControlProduct1;
     }
 }
