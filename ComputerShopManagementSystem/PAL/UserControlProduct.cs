@@ -17,6 +17,7 @@ namespace ComputerShopManagementSystem.PAL
         private string id = "";
         ImageConverter imageConverter;
         MemoryStream memoryStream;
+        private byte[] image;
 
         public UserControlProduct()
         {
@@ -54,7 +55,7 @@ namespace ComputerShopManagementSystem.PAL
             cmbStatus.SelectedIndex = 0;
         }
 
-        private void EmptyBx1()
+        private void EmptyBox1()
         {
             txtProductName1.Clear();
             picPhoto1.Image = null;
@@ -158,7 +159,138 @@ namespace ComputerShopManagementSystem.PAL
 
         private void dgvProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if(e.RowIndex != -1)
+            {
+                ComboBoxAutoFill();
+                DataGridViewRow row = dgvProduct.Rows[e.RowIndex];
+                id = row.Cells[0].Value.ToString();
+                txtProductName1.Text = row.Cells[1].Value.ToString();
+                image = (byte[])row.Cells[2].Value;
+                memoryStream = new MemoryStream(image);
+                picPhoto1.Image = Image.FromStream(memoryStream);
+                nudRate1.Value = Convert.ToInt32(row.Cells[3].Value.ToString());
+                nudQuantity1.Value = Convert.ToInt32(row.Cells[4].Value.ToString());
+                cmbBrand1.SelectedItem = row.Cells[5].Value.ToString();
+                cmbCategory1.SelectedItem = row.Cells[6].Value.ToString();
+                cmbStatus1.SelectedItem = row.Cells[7].Value.ToString();
+                tcProduct.SelectedTab = tpOptions;
+            }
+        }
 
+        private void btnChange_Click(object sender, EventArgs e)
+        {
+            if(id == "")
+            {
+                MessageBox.Show("Please select row from table.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (txtProductName1.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Please enter product name.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (picPhoto1.Image == null)
+            {
+                MessageBox.Show("Please select image.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (nudRate1.Value == 0)
+            {
+                MessageBox.Show("Please enter rate.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (nudQuantity1.Value == 0)
+            {
+                MessageBox.Show("Please enter quantity.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (cmbBrand1.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select brand.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (cmbCategory1.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select category.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (cmbStatus1.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select status.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                Product product = new Product(txtProductName.Text.Trim(), (byte[])imageConverter.ConvertTo(picPhoto1.Image, typeof(byte[])), Convert.ToInt32(nudRate1.Value), Convert.ToInt32(nudQuantity1.Value), cmbBrand1.SelectedItem.ToString(), cmbCategory1.SelectedItem.ToString(), cmbStatus1.SelectedItem.ToString());
+                Computer.Computer.ChangeProduct(product, id);
+                EmptyBox1();
+                tcProduct.SelectedTab = tpManageProduct;
+            }
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (id == "")
+            {
+                MessageBox.Show("Please select row from table.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (txtProductName1.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Please enter product name.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (picPhoto1.Image == null)
+            {
+                MessageBox.Show("Please select image.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (nudRate1.Value == 0)
+            {
+                MessageBox.Show("Please enter rate.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (nudQuantity1.Value == 0)
+            {
+                MessageBox.Show("Please enter quantity.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (cmbBrand1.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select brand.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (cmbCategory1.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select category.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (cmbStatus1.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select status.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Are you want to delete this product?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Computer.Computer.RemoveProduct(id);
+                    EmptyBox1();
+                    tcProduct.SelectedTab = tpManageProduct;
+                }
+            }
+        }
+
+        private void tpOptions_Enter(object sender, EventArgs e)
+        {
+            if (id == "")
+                tcProduct.SelectedTab = tpManageProduct;
+        }
+
+        private void tpOptions_Leave(object sender, EventArgs e)
+        {
+            EmptyBox1 ();
         }
     }
 }
