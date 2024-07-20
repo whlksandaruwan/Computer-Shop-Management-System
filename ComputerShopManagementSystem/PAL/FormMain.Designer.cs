@@ -52,10 +52,11 @@
             this.pnlCenter = new System.Windows.Forms.Panel();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.userControlProduct1 = new ComputerShopManagementSystem.PAL.UserControlProduct();
             this.userControlCategory1 = new ComputerShopManagementSystem.PAL.UserControlCategory();
             this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
-            this.userControlProduct1 = new ComputerShopManagementSystem.PAL.UserControlProduct();
+            this.userControlOrder1 = new ComputerShopManagementSystem.PAL.UserControlOrder();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -312,6 +313,7 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlOrder1);
             this.pnlCenter.Controls.Add(this.userControlProduct1);
             this.pnlCenter.Controls.Add(this.userControlCategory1);
             this.pnlCenter.Controls.Add(this.userControlBrand1);
@@ -331,6 +333,15 @@
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // userControlProduct1
+            // 
+            this.userControlProduct1.BackColor = System.Drawing.Color.White;
+            this.userControlProduct1.Location = new System.Drawing.Point(0, 0);
+            this.userControlProduct1.Name = "userControlProduct1";
+            this.userControlProduct1.Size = new System.Drawing.Size(747, 646);
+            this.userControlProduct1.TabIndex = 0;
+            this.userControlProduct1.Visible = false;
             // 
             // userControlCategory1
             // 
@@ -358,14 +369,14 @@
             this.userControlDashboard1.TabIndex = 0;
             this.userControlDashboard1.Load += new System.EventHandler(this.userControlDashboard1_Load);
             // 
-            // userControlProduct1
+            // userControlOrder1
             // 
-            this.userControlProduct1.BackColor = System.Drawing.Color.White;
-            this.userControlProduct1.Location = new System.Drawing.Point(0, 0);
-            this.userControlProduct1.Name = "userControlProduct1";
-            this.userControlProduct1.Size = new System.Drawing.Size(747, 646);
-            this.userControlProduct1.TabIndex = 0;
-            this.userControlProduct1.Visible = false;
+            this.userControlOrder1.BackColor = System.Drawing.Color.White;
+            this.userControlOrder1.Location = new System.Drawing.Point(-2, 0);
+            this.userControlOrder1.Name = "userControlOrder1";
+            this.userControlOrder1.Size = new System.Drawing.Size(746, 646);
+            this.userControlOrder1.TabIndex = 0;
+            this.userControlOrder1.Visible = false;
             // 
             // FormMain
             // 
@@ -422,5 +433,6 @@
         private UserControlBrand userControlBrand1;
         private UserControlCategory userControlCategory1;
         private UserControlProduct userControlProduct1;
+        private UserControlOrder userControlOrder1;
     }
 }
