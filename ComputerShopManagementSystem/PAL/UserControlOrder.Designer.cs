@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpAddOrder = new System.Windows.Forms.TabPage();
             this.btnReceipt = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.cmbPaymentStatus = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtGrandTotal = new System.Windows.Forms.TextBox();
             this.nudDiscount = new System.Windows.Forms.NumericUpDown();
@@ -47,7 +49,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dgvOrders = new System.Windows.Forms.DataGridView();
+            this.dgvProductList = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,18 +71,65 @@
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tpManageOrders = new System.Windows.Forms.TabPage();
+            this.txtSearchCustomerName = new System.Windows.Forms.TextBox();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dgvOrders = new System.Windows.Forms.DataGridView();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.picSearch = new System.Windows.Forms.PictureBox();
+            this.tpOptions = new System.Windows.Forms.TabPage();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnChange = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.cmbPaymentStatus1 = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtGrandTotal1 = new System.Windows.Forms.TextBox();
+            this.nudDiscount1 = new System.Windows.Forms.NumericUpDown();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtDueAmount1 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.nudPaidAmount1 = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtTotalAmount1 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.mtbCustomerNumber1 = new System.Windows.Forms.MaskedTextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtCustomerName1 = new System.Windows.Forms.TextBox();
+            this.dtpDate1 = new System.Windows.Forms.DateTimePicker();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.tabControl1.SuspendLayout();
             this.tpAddOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDiscount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPaidAmount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuatity)).BeginInit();
+            this.tpManageOrders.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
+            this.tpOptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDiscount1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPaidAmount1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -90,8 +139,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tpAddOrder);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tpManageOrders);
+            this.tabControl1.Controls.Add(this.tpOptions);
             this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(14, 12);
             this.tabControl1.Name = "tabControl1";
@@ -104,7 +153,7 @@
             this.tpAddOrder.Controls.Add(this.btnReceipt);
             this.tpAddOrder.Controls.Add(this.btnSave);
             this.tpAddOrder.Controls.Add(this.label14);
-            this.tpAddOrder.Controls.Add(this.cmbStatus);
+            this.tpAddOrder.Controls.Add(this.cmbPaymentStatus);
             this.tpAddOrder.Controls.Add(this.label13);
             this.tpAddOrder.Controls.Add(this.txtGrandTotal);
             this.tpAddOrder.Controls.Add(this.nudDiscount);
@@ -115,7 +164,7 @@
             this.tpAddOrder.Controls.Add(this.label10);
             this.tpAddOrder.Controls.Add(this.txtTotalAmount);
             this.tpAddOrder.Controls.Add(this.label9);
-            this.tpAddOrder.Controls.Add(this.dgvOrders);
+            this.tpAddOrder.Controls.Add(this.dgvProductList);
             this.tpAddOrder.Controls.Add(this.btnAdd);
             this.tpAddOrder.Controls.Add(this.txtTotal);
             this.tpAddOrder.Controls.Add(this.label8);
@@ -186,20 +235,20 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Discount:";
             // 
-            // cmbStatus
+            // cmbPaymentStatus
             // 
-            this.cmbStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Items.AddRange(new object[] {
+            this.cmbPaymentStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbPaymentStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPaymentStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbPaymentStatus.FormattingEnabled = true;
+            this.cmbPaymentStatus.Items.AddRange(new object[] {
             "--SELECT--",
             "Paid",
             "Not Paid"});
-            this.cmbStatus.Location = new System.Drawing.Point(317, 383);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(291, 23);
-            this.cmbStatus.TabIndex = 14;
+            this.cmbPaymentStatus.Location = new System.Drawing.Point(317, 383);
+            this.cmbPaymentStatus.Name = "cmbPaymentStatus";
+            this.cmbPaymentStatus.Size = new System.Drawing.Size(291, 23);
+            this.cmbPaymentStatus.TabIndex = 14;
             // 
             // label13
             // 
@@ -326,54 +375,54 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Total Amount:";
             // 
-            // dgvOrders
+            // dgvProductList
             // 
-            this.dgvOrders.AllowUserToAddRows = false;
-            this.dgvOrders.AllowUserToDeleteRows = false;
-            this.dgvOrders.AllowUserToResizeColumns = false;
-            this.dgvOrders.AllowUserToResizeRows = false;
-            this.dgvOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvOrders.BackgroundColor = System.Drawing.Color.White;
-            this.dgvOrders.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvOrders.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvOrders.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProductList.AllowUserToAddRows = false;
+            this.dgvProductList.AllowUserToDeleteRows = false;
+            this.dgvProductList.AllowUserToResizeColumns = false;
+            this.dgvProductList.AllowUserToResizeRows = false;
+            this.dgvProductList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvProductList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProductList.BackgroundColor = System.Drawing.Color.White;
+            this.dgvProductList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvProductList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dgvProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvOrders.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvOrders.EnableHeadersVisualStyles = false;
-            this.dgvOrders.Location = new System.Drawing.Point(6, 169);
-            this.dgvOrders.MultiSelect = false;
-            this.dgvOrders.Name = "dgvOrders";
-            this.dgvOrders.ReadOnly = true;
-            this.dgvOrders.RowHeadersVisible = false;
-            this.dgvOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvOrders.ShowCellErrors = false;
-            this.dgvOrders.ShowCellToolTips = false;
-            this.dgvOrders.ShowEditingIcon = false;
-            this.dgvOrders.ShowRowErrors = false;
-            this.dgvOrders.Size = new System.Drawing.Size(693, 109);
-            this.dgvOrders.TabIndex = 0;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProductList.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dgvProductList.EnableHeadersVisualStyles = false;
+            this.dgvProductList.Location = new System.Drawing.Point(6, 169);
+            this.dgvProductList.MultiSelect = false;
+            this.dgvProductList.Name = "dgvProductList";
+            this.dgvProductList.ReadOnly = true;
+            this.dgvProductList.RowHeadersVisible = false;
+            this.dgvProductList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvProductList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProductList.ShowCellErrors = false;
+            this.dgvProductList.ShowCellToolTips = false;
+            this.dgvProductList.ShowEditingIcon = false;
+            this.dgvProductList.ShowRowErrors = false;
+            this.dgvProductList.Size = new System.Drawing.Size(693, 109);
+            this.dgvProductList.TabIndex = 0;
             // 
             // Column1
             // 
@@ -419,6 +468,8 @@
             this.btnAdd.Size = new System.Drawing.Size(30, 30);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.MouseHover += new System.EventHandler(this.btnAdd_MouseHover);
             // 
             // txtTotal
             // 
@@ -599,25 +650,502 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "../Add Order";
             // 
-            // tabPage2
+            // tpManageOrders
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(710, 438);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tpManageOrders.Controls.Add(this.txtSearchCustomerName);
+            this.tpManageOrders.Controls.Add(this.lblTotal);
+            this.tpManageOrders.Controls.Add(this.label15);
+            this.tpManageOrders.Controls.Add(this.dgvOrders);
+            this.tpManageOrders.Controls.Add(this.label16);
+            this.tpManageOrders.Controls.Add(this.label17);
+            this.tpManageOrders.Controls.Add(this.picSearch);
+            this.tpManageOrders.Location = new System.Drawing.Point(4, 4);
+            this.tpManageOrders.Name = "tpManageOrders";
+            this.tpManageOrders.Padding = new System.Windows.Forms.Padding(3);
+            this.tpManageOrders.Size = new System.Drawing.Size(710, 457);
+            this.tpManageOrders.TabIndex = 1;
+            this.tpManageOrders.Text = "Manage Orders";
+            this.tpManageOrders.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // txtSearchCustomerName
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(710, 438);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.txtSearchCustomerName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSearchCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchCustomerName.Location = new System.Drawing.Point(203, 80);
+            this.txtSearchCustomerName.Name = "txtSearchCustomerName";
+            this.txtSearchCustomerName.Size = new System.Drawing.Size(268, 23);
+            this.txtSearchCustomerName.TabIndex = 1;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTotal.Location = new System.Drawing.Point(56, 360);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(20, 15);
+            this.lblTotal.TabIndex = 0;
+            this.lblTotal.Text = "{?}";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label15.Location = new System.Drawing.Point(14, 360);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(36, 15);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Total:";
+            // 
+            // dgvOrders
+            // 
+            this.dgvOrders.AllowUserToAddRows = false;
+            this.dgvOrders.AllowUserToDeleteRows = false;
+            this.dgvOrders.AllowUserToResizeColumns = false;
+            this.dgvOrders.AllowUserToResizeRows = false;
+            this.dgvOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvOrders.BackgroundColor = System.Drawing.Color.White;
+            this.dgvOrders.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvOrders.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvOrders.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            this.dgvOrders.ColumnHeadersHeight = 37;
+            this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13,
+            this.Column14,
+            this.Column15});
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvOrders.DefaultCellStyle = dataGridViewCellStyle20;
+            this.dgvOrders.EnableHeadersVisualStyles = false;
+            this.dgvOrders.Location = new System.Drawing.Point(7, 144);
+            this.dgvOrders.MultiSelect = false;
+            this.dgvOrders.Name = "dgvOrders";
+            this.dgvOrders.ReadOnly = true;
+            this.dgvOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvOrders.ShowCellErrors = false;
+            this.dgvOrders.ShowCellToolTips = false;
+            this.dgvOrders.ShowEditingIcon = false;
+            this.dgvOrders.ShowRowErrors = false;
+            this.dgvOrders.Size = new System.Drawing.Size(697, 213);
+            this.dgvOrders.TabIndex = 0;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Orders #";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Date";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Customer Name";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Customer Number";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Total Amount";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Paid Amount";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "Due Amount";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "Discount";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "Grand Total";
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = "Status";
+            this.Column15.Name = "Column15";
+            this.Column15.ReadOnly = true;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label16.Location = new System.Drawing.Point(200, 62);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(96, 15);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Customer Name:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.label17.Location = new System.Drawing.Point(3, 3);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(138, 21);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "../Manage Orders";
+            // 
+            // picSearch
+            // 
+            this.picSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSearch.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_search_50;
+            this.picSearch.Location = new System.Drawing.Point(470, 80);
+            this.picSearch.Name = "picSearch";
+            this.picSearch.Size = new System.Drawing.Size(23, 23);
+            this.picSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSearch.TabIndex = 19;
+            this.picSearch.TabStop = false;
+            this.picSearch.MouseHover += new System.EventHandler(this.picSearch_MouseHover);
+            // 
+            // tpOptions
+            // 
+            this.tpOptions.Controls.Add(this.btnRemove);
+            this.tpOptions.Controls.Add(this.btnChange);
+            this.tpOptions.Controls.Add(this.label22);
+            this.tpOptions.Controls.Add(this.cmbPaymentStatus1);
+            this.tpOptions.Controls.Add(this.label23);
+            this.tpOptions.Controls.Add(this.txtGrandTotal1);
+            this.tpOptions.Controls.Add(this.nudDiscount1);
+            this.tpOptions.Controls.Add(this.label24);
+            this.tpOptions.Controls.Add(this.txtDueAmount1);
+            this.tpOptions.Controls.Add(this.label25);
+            this.tpOptions.Controls.Add(this.nudPaidAmount1);
+            this.tpOptions.Controls.Add(this.label26);
+            this.tpOptions.Controls.Add(this.txtTotalAmount1);
+            this.tpOptions.Controls.Add(this.label27);
+            this.tpOptions.Controls.Add(this.mtbCustomerNumber1);
+            this.tpOptions.Controls.Add(this.label21);
+            this.tpOptions.Controls.Add(this.label20);
+            this.tpOptions.Controls.Add(this.txtCustomerName1);
+            this.tpOptions.Controls.Add(this.dtpDate1);
+            this.tpOptions.Controls.Add(this.label19);
+            this.tpOptions.Controls.Add(this.label18);
+            this.tpOptions.Location = new System.Drawing.Point(4, 4);
+            this.tpOptions.Name = "tpOptions";
+            this.tpOptions.Padding = new System.Windows.Forms.Padding(3);
+            this.tpOptions.Size = new System.Drawing.Size(710, 457);
+            this.tpOptions.TabIndex = 2;
+            this.tpOptions.Text = "Options";
+            this.tpOptions.UseVisualStyleBackColor = true;
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.Location = new System.Drawing.Point(177, 362);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(109, 38);
+            this.btnRemove.TabIndex = 11;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = false;
+            // 
+            // btnChange
+            // 
+            this.btnChange.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.btnChange.FlatAppearance.BorderSize = 0;
+            this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChange.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChange.ForeColor = System.Drawing.Color.White;
+            this.btnChange.Location = new System.Drawing.Point(49, 362);
+            this.btnChange.Name = "btnChange";
+            this.btnChange.Size = new System.Drawing.Size(109, 38);
+            this.btnChange.TabIndex = 10;
+            this.btnChange.Text = "Change";
+            this.btnChange.UseVisualStyleBackColor = false;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label22.Location = new System.Drawing.Point(363, 231);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(58, 15);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Discount:";
+            // 
+            // cmbPaymentStatus1
+            // 
+            this.cmbPaymentStatus1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbPaymentStatus1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPaymentStatus1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbPaymentStatus1.FormattingEnabled = true;
+            this.cmbPaymentStatus1.Items.AddRange(new object[] {
+            "--SELECT--",
+            "Paid",
+            "Not Paid"});
+            this.cmbPaymentStatus1.Location = new System.Drawing.Point(366, 304);
+            this.cmbPaymentStatus1.Name = "cmbPaymentStatus1";
+            this.cmbPaymentStatus1.Size = new System.Drawing.Size(291, 23);
+            this.cmbPaymentStatus1.TabIndex = 9;
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label23.Location = new System.Drawing.Point(363, 286);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(93, 15);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Payment Status:";
+            // 
+            // txtGrandTotal1
+            // 
+            this.txtGrandTotal1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtGrandTotal1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGrandTotal1.Location = new System.Drawing.Point(51, 304);
+            this.txtGrandTotal1.Name = "txtGrandTotal1";
+            this.txtGrandTotal1.ReadOnly = true;
+            this.txtGrandTotal1.Size = new System.Drawing.Size(291, 23);
+            this.txtGrandTotal1.TabIndex = 8;
+            this.txtGrandTotal1.Text = "0";
+            // 
+            // nudDiscount1
+            // 
+            this.nudDiscount1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nudDiscount1.Location = new System.Drawing.Point(365, 247);
+            this.nudDiscount1.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.nudDiscount1.Name = "nudDiscount1";
+            this.nudDiscount1.Size = new System.Drawing.Size(291, 23);
+            this.nudDiscount1.TabIndex = 7;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label24.Location = new System.Drawing.Point(48, 286);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(71, 15);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Grand Total:";
+            // 
+            // txtDueAmount1
+            // 
+            this.txtDueAmount1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDueAmount1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDueAmount1.Location = new System.Drawing.Point(50, 249);
+            this.txtDueAmount1.Name = "txtDueAmount1";
+            this.txtDueAmount1.ReadOnly = true;
+            this.txtDueAmount1.Size = new System.Drawing.Size(291, 23);
+            this.txtDueAmount1.TabIndex = 6;
+            this.txtDueAmount1.Text = "0";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label25.Location = new System.Drawing.Point(47, 231);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(79, 15);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Due Amount:";
+            // 
+            // nudPaidAmount1
+            // 
+            this.nudPaidAmount1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nudPaidAmount1.Location = new System.Drawing.Point(365, 195);
+            this.nudPaidAmount1.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.nudPaidAmount1.Name = "nudPaidAmount1";
+            this.nudPaidAmount1.Size = new System.Drawing.Size(291, 23);
+            this.nudPaidAmount1.TabIndex = 5;
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label26.Location = new System.Drawing.Point(362, 177);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(80, 15);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Paid Amount:";
+            // 
+            // txtTotalAmount1
+            // 
+            this.txtTotalAmount1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTotalAmount1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotalAmount1.Location = new System.Drawing.Point(50, 195);
+            this.txtTotalAmount1.Name = "txtTotalAmount1";
+            this.txtTotalAmount1.ReadOnly = true;
+            this.txtTotalAmount1.Size = new System.Drawing.Size(291, 23);
+            this.txtTotalAmount1.TabIndex = 4;
+            this.txtTotalAmount1.Text = "0";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label27.Location = new System.Drawing.Point(47, 177);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(83, 15);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Total Amount:";
+            // 
+            // mtbCustomerNumber1
+            // 
+            this.mtbCustomerNumber1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mtbCustomerNumber1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mtbCustomerNumber1.Location = new System.Drawing.Point(50, 142);
+            this.mtbCustomerNumber1.Mask = "000-0000000";
+            this.mtbCustomerNumber1.Name = "mtbCustomerNumber1";
+            this.mtbCustomerNumber1.Size = new System.Drawing.Size(291, 23);
+            this.mtbCustomerNumber1.TabIndex = 3;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label21.Location = new System.Drawing.Point(47, 124);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(108, 15);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "Customer Number:";
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label20.Location = new System.Drawing.Point(362, 70);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(96, 15);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Customer Name:";
+            // 
+            // txtCustomerName1
+            // 
+            this.txtCustomerName1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCustomerName1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCustomerName1.Location = new System.Drawing.Point(365, 88);
+            this.txtCustomerName1.Name = "txtCustomerName1";
+            this.txtCustomerName1.Size = new System.Drawing.Size(291, 23);
+            this.txtCustomerName1.TabIndex = 2;
+            // 
+            // dtpDate1
+            // 
+            this.dtpDate1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpDate1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDate1.Location = new System.Drawing.Point(50, 88);
+            this.dtpDate1.Name = "dtpDate1";
+            this.dtpDate1.Size = new System.Drawing.Size(291, 23);
+            this.dtpDate1.TabIndex = 1;
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label19.Location = new System.Drawing.Point(47, 70);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(35, 15);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Date:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.label18.Location = new System.Drawing.Point(3, 3);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(83, 21);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "../Options";
             // 
             // dataGridViewImageColumn1
             // 
@@ -637,6 +1165,14 @@
             // 
             this.guna2Elipse2.TargetControl = this.btnReceipt;
             // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.btnChange;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.btnRemove;
+            // 
             // UserControlOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -650,8 +1186,16 @@
             this.tpAddOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDiscount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPaidAmount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuatity)).EndInit();
+            this.tpManageOrders.ResumeLayout(false);
+            this.tpManageOrders.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
+            this.tpOptions.ResumeLayout(false);
+            this.tpOptions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDiscount1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPaidAmount1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -660,8 +1204,8 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tpAddOrder;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tpManageOrders;
+        private System.Windows.Forms.TabPage tpOptions;
         private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -678,7 +1222,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown nudQuatity;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.DataGridView dgvOrders;
+        private System.Windows.Forms.DataGridView dgvProductList;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -695,12 +1239,53 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtGrandTotal;
-        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.ComboBox cmbPaymentStatus;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnReceipt;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.TextBox txtSearchCustomerName;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DataGridView dgvOrders;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.PictureBox picSearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtCustomerName1;
+        private System.Windows.Forms.DateTimePicker dtpDate1;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ComboBox cmbPaymentStatus1;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox txtGrandTotal1;
+        private System.Windows.Forms.NumericUpDown nudDiscount1;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtDueAmount1;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.NumericUpDown nudPaidAmount1;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox txtTotalAmount1;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.MaskedTextBox mtbCustomerNumber1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnChange;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
     }
 }
