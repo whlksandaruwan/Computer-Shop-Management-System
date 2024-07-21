@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.tcReport = new System.Windows.Forms.TabControl();
             this.tpReport = new System.Windows.Forms.TabPage();
+            this.btnGenerateReport = new System.Windows.Forms.Button();
+            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnGenerateReport = new System.Windows.Forms.Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.tcReport.SuspendLayout();
             this.tpReport.SuspendLayout();
@@ -45,6 +45,9 @@
             // tcReport
             // 
             this.tcReport.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.tcReport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tcReport.Controls.Add(this.tpReport);
             this.tcReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcReport.Location = new System.Drawing.Point(14, 12);
@@ -52,6 +55,7 @@
             this.tcReport.SelectedIndex = 0;
             this.tcReport.Size = new System.Drawing.Size(718, 439);
             this.tcReport.TabIndex = 0;
+            this.tcReport.SelectedIndexChanged += new System.EventHandler(this.tcReport_SelectedIndexChanged);
             // 
             // tpReport
             // 
@@ -68,6 +72,44 @@
             this.tpReport.TabIndex = 2;
             this.tpReport.Text = "Report";
             this.tpReport.UseVisualStyleBackColor = true;
+            // 
+            // btnGenerateReport
+            // 
+            this.btnGenerateReport.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGenerateReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.btnGenerateReport.FlatAppearance.BorderSize = 0;
+            this.btnGenerateReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerateReport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerateReport.ForeColor = System.Drawing.Color.White;
+            this.btnGenerateReport.Location = new System.Drawing.Point(56, 178);
+            this.btnGenerateReport.Name = "btnGenerateReport";
+            this.btnGenerateReport.Size = new System.Drawing.Size(118, 38);
+            this.btnGenerateReport.TabIndex = 3;
+            this.btnGenerateReport.Text = "Generate Report";
+            this.btnGenerateReport.UseVisualStyleBackColor = false;
+            this.btnGenerateReport.Click += new System.EventHandler(this.btnGenerateReport_Click);
+            // 
+            // dtpEndDate
+            // 
+            this.dtpEndDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpEndDate.Location = new System.Drawing.Point(365, 119);
+            this.dtpEndDate.Name = "dtpEndDate";
+            this.dtpEndDate.Size = new System.Drawing.Size(291, 23);
+            this.dtpEndDate.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(365, 101);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 15);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "End Date:";
             // 
             // dtpStartDate
             // 
@@ -103,44 +145,6 @@
             this.label1.Size = new System.Drawing.Size(76, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "../Report";
-            // 
-            // dtpEndDate
-            // 
-            this.dtpEndDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEndDate.Location = new System.Drawing.Point(365, 119);
-            this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(291, 23);
-            this.dtpEndDate.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(365, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 15);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "End Date:";
-            // 
-            // btnGenerateReport
-            // 
-            this.btnGenerateReport.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnGenerateReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.btnGenerateReport.FlatAppearance.BorderSize = 0;
-            this.btnGenerateReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerateReport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerateReport.ForeColor = System.Drawing.Color.White;
-            this.btnGenerateReport.Location = new System.Drawing.Point(56, 178);
-            this.btnGenerateReport.Name = "btnGenerateReport";
-            this.btnGenerateReport.Size = new System.Drawing.Size(118, 38);
-            this.btnGenerateReport.TabIndex = 3;
-            this.btnGenerateReport.Text = "Generate Report";
-            this.btnGenerateReport.UseVisualStyleBackColor = false;
-            this.btnGenerateReport.Click += new System.EventHandler(this.btnGenerateReport_Click);
             // 
             // guna2Elipse1
             // 

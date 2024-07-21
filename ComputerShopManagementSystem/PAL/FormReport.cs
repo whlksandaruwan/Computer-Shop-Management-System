@@ -15,6 +15,16 @@ namespace ComputerShopManagementSystem.PAL
         internal static FormReport formReport;
         public DateTime startDate, endDate;
 
+        private void FormReport_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataSet.Orders' table. You can move, or remove it, as needed.
+            this.ordersTableAdapter.Fill(this.dataSet.Orders);
+            // TODO: This line of code loads data into the 'dataSet.Orders' table. You can move, or remove it, as needed.
+            this.ordersTableAdapter.FillByDate(this.dataSet.Orders, startDate, endDate);
+
+            this.reportViewer1.RefreshReport();
+        }
+
         public FormReport()
         {
             InitializeComponent();

@@ -50,13 +50,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnlCenter = new System.Windows.Forms.Panel();
-            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.userControlOrder1 = new ComputerShopManagementSystem.PAL.UserControlOrder();
             this.userControlProduct1 = new ComputerShopManagementSystem.PAL.UserControlProduct();
             this.userControlCategory1 = new ComputerShopManagementSystem.PAL.UserControlCategory();
             this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
-            this.userControlOrder1 = new ComputerShopManagementSystem.PAL.UserControlOrder();
+            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.userControlReport1 = new ComputerShopManagementSystem.PAL.UserControlReport();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -313,6 +314,7 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlReport1);
             this.pnlCenter.Controls.Add(this.userControlOrder1);
             this.pnlCenter.Controls.Add(this.userControlProduct1);
             this.pnlCenter.Controls.Add(this.userControlCategory1);
@@ -324,15 +326,14 @@
             this.pnlCenter.Size = new System.Drawing.Size(747, 509);
             this.pnlCenter.TabIndex = 0;
             // 
-            // timerDateAndTime
+            // userControlOrder1
             // 
-            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.userControlOrder1.BackColor = System.Drawing.Color.White;
+            this.userControlOrder1.Location = new System.Drawing.Point(-2, 0);
+            this.userControlOrder1.Name = "userControlOrder1";
+            this.userControlOrder1.Size = new System.Drawing.Size(746, 646);
+            this.userControlOrder1.TabIndex = 0;
+            this.userControlOrder1.Visible = false;
             // 
             // userControlProduct1
             // 
@@ -369,14 +370,23 @@
             this.userControlDashboard1.TabIndex = 0;
             this.userControlDashboard1.Load += new System.EventHandler(this.userControlDashboard1_Load);
             // 
-            // userControlOrder1
+            // timerDateAndTime
             // 
-            this.userControlOrder1.BackColor = System.Drawing.Color.White;
-            this.userControlOrder1.Location = new System.Drawing.Point(-2, 0);
-            this.userControlOrder1.Name = "userControlOrder1";
-            this.userControlOrder1.Size = new System.Drawing.Size(746, 646);
-            this.userControlOrder1.TabIndex = 0;
-            this.userControlOrder1.Visible = false;
+            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // userControlReport1
+            // 
+            this.userControlReport1.BackColor = System.Drawing.Color.White;
+            this.userControlReport1.Location = new System.Drawing.Point(-2, 0);
+            this.userControlReport1.Name = "userControlReport1";
+            this.userControlReport1.Size = new System.Drawing.Size(746, 646);
+            this.userControlReport1.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -434,5 +444,6 @@
         private UserControlCategory userControlCategory1;
         private UserControlProduct userControlProduct1;
         private UserControlOrder userControlOrder1;
+        private UserControlReport userControlReport1;
     }
 }

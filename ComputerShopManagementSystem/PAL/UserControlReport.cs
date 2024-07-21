@@ -29,5 +29,10 @@ namespace ComputerShopManagementSystem.PAL
             formReport.endDate = dtpEndDate.Value.Date;
             formReport.ShowDialog();
         }
+
+        private void tcReport_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

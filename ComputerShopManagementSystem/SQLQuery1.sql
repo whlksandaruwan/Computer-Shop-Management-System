@@ -56,6 +56,13 @@ CREATE TABLE Orders
 	CONSTRAINT PK_Orders PRIMARY KEY (Orders_Id)
 );
 
+CREATE PROCEDURE GetOrdersReport(@StartDate Date, @EndDate Date)
+AS
+SELECT Orders_Id, Orders_Date, Customer_Name, Customer_Number, Grand_Total
+FROM Orders
+WHERE Orders_Date BETWEEN @startDate AND @EndDate
+ORDER BY Orders_Date ASC;
+
 SELECT * FROM Users;
 SELECT * FROM Brand;
 SELECT * FROM Category;
