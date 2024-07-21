@@ -10,7 +10,9 @@ CREATE TABLE Users
 );
 
 INSERT INTO Users VALUES
-    ('Kavindu', 'sandaruwan@gmail.com', '200385');
+    ('Kavindu', 'sandaruwan@gmail.com', '200385'),
+	('Tech', 'techhaven@gmail.com', '2024');
+	
 
 CREATE TABLE Brand
 (
