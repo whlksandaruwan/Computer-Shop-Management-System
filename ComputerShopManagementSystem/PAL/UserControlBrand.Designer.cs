@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tcBrand = new System.Windows.Forms.TabControl();
             this.tpAddBrand = new System.Windows.Forms.TabPage();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -49,6 +49,7 @@
             this.txtSearchBrandName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.picSearch = new System.Windows.Forms.PictureBox();
             this.tpOptions = new System.Windows.Forms.TabPage();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnChange = new System.Windows.Forms.Button();
@@ -62,13 +63,12 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.picSearch = new System.Windows.Forms.PictureBox();
             this.tcBrand.SuspendLayout();
             this.tpAddBrand.SuspendLayout();
             this.tpManageBrand.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBrand)).BeginInit();
-            this.tpOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
+            this.tpOptions.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcBrand
@@ -241,27 +241,27 @@
             this.dgvBrand.BackgroundColor = System.Drawing.Color.White;
             this.dgvBrand.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvBrand.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBrand.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBrand.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBrand.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvBrand.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBrand.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBrand.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvBrand.EnableHeadersVisualStyles = false;
             this.dgvBrand.Location = new System.Drawing.Point(17, 144);
             this.dgvBrand.MultiSelect = false;
@@ -306,7 +306,6 @@
             this.txtSearchBrandName.Name = "txtSearchBrandName";
             this.txtSearchBrandName.Size = new System.Drawing.Size(268, 23);
             this.txtSearchBrandName.TabIndex = 2;
-            this.txtSearchBrandName.TextChanged += new System.EventHandler(this.txtSearchBrandName_TextChanged);
             // 
             // label4
             // 
@@ -332,6 +331,20 @@
             this.label5.Size = new System.Drawing.Size(131, 21);
             this.label5.TabIndex = 0;
             this.label5.Text = "../Manage Brand";
+            // 
+            // picSearch
+            // 
+            this.picSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSearch.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_search_50;
+            this.picSearch.Location = new System.Drawing.Point(470, 80);
+            this.picSearch.Name = "picSearch";
+            this.picSearch.Size = new System.Drawing.Size(23, 23);
+            this.picSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSearch.TabIndex = 5;
+            this.picSearch.TabStop = false;
+            this.picSearch.MouseHover += new System.EventHandler(this.picSearch_MouseHover);
             // 
             // tpOptions
             // 
@@ -462,20 +475,6 @@
             // 
             this.guna2Elipse3.TargetControl = this.btnRemove;
             // 
-            // picSearch
-            // 
-            this.picSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSearch.Image = global::ComputerShopManagementSystem.Properties.Resources.icons8_search_50;
-            this.picSearch.Location = new System.Drawing.Point(470, 80);
-            this.picSearch.Name = "picSearch";
-            this.picSearch.Size = new System.Drawing.Size(23, 23);
-            this.picSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSearch.TabIndex = 5;
-            this.picSearch.TabStop = false;
-            this.picSearch.MouseHover += new System.EventHandler(this.picSearch_MouseHover);
-            // 
             // UserControlBrand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -490,9 +489,9 @@
             this.tpManageBrand.ResumeLayout(false);
             this.tpManageBrand.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBrand)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.tpOptions.ResumeLayout(false);
             this.tpOptions.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.ResumeLayout(false);
 
         }

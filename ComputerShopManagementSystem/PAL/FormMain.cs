@@ -23,6 +23,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlProduct1.Visible = false;
             userControlOrder1.Visible = false;
             userControlReport1.Visible = false;
+            userControlUser1.Visible = false;
             userControlDashboard1.Visible = true;
         }
 
@@ -62,6 +63,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlProduct1.Visible = false;
             userControlOrder1.Visible = false;
             userControlReport1.Visible = false;
+            userControlUser1.Visible = false;
             userControlDashboard1.Visible = true;
         }
 
@@ -73,6 +75,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlProduct1.Visible = false;
             userControlOrder1.Visible = false;
             userControlReport1.Visible = false;
+            userControlUser1.Visible = false;
             userControlBrand1.EmptyBox();
             userControlBrand1.Visible = true;
         }
@@ -85,6 +88,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlProduct1.Visible = false;
             userControlOrder1.Visible = false;
             userControlReport1.Visible = false;
+            userControlUser1.Visible = false;
             userControlCategory1.EmptyBox();
             userControlCategory1.Visible = true;
         }
@@ -97,6 +101,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlCategory1.Visible = false;
             userControlOrder1.Visible = false;
             userControlReport1.Visible = false;
+            userControlUser1.Visible = false;
             userControlProduct1.EmptyBox();
             userControlProduct1.Visible = true;
         }
@@ -109,6 +114,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlCategory1.Visible = false;
             userControlProduct1.Visible = false;
             userControlReport1.Visible = false;
+            userControlUser1.Visible = false;
             userControlOrder1.EmptyBox();
             userControlOrder1.Visible = true;
         }
@@ -121,6 +127,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlCategory1.Visible = false;
             userControlProduct1.Visible = false;
             userControlOrder1.Visible = false;
+            userControlUser1.Visible = false;
             userControlReport1.Visible = true;
         }
 
@@ -133,6 +140,8 @@ namespace ComputerShopManagementSystem.PAL
             userControlProduct1.Visible = false;
             userControlOrder1.Visible = false;
             userControlReport1.Visible = false;
+            userControlUser1.EmptyBox();
+            userControlUser1.Visible = true;
         }
 
         private void timerDateAndTime_Tick(object sender, EventArgs e)
