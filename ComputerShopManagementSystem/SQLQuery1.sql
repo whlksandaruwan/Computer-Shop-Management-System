@@ -41,7 +41,23 @@ CREATE TABLE Product
 	CONSTRAINT PK_Product PRIMARY KEY (Product_Id)
 );
 
+CREATE TABLE Orders
+(
+	Orders_Id INT IDENTITY(1,1),
+	Orders_Date Date,
+	Customer_Name VARCHAR(150),
+	Customer_Number VARCHAR(15) UNIQUE,
+	Total_Amount INT,
+	Paid_Amount INT,
+	Due_Amount INT,
+	Discount INT,
+	Grand_Total INT,
+	Payment_Status VARCHAR(15),
+	CONSTRAINT PK_Orders PRIMARY KEY (Orders_Id)
+);
+
 SELECT * FROM Users;
 SELECT * FROM Brand;
 SELECT * FROM Category;
 SELECT * FROM Product;
+SELECT * FROM Orders;

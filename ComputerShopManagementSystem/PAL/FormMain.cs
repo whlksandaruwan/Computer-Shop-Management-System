@@ -103,6 +103,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlBrand1.Visible = false;
             userControlCategory1.Visible = false;
             userControlProduct1.Visible = false;
+            userControlOrder1.EmptyBox();
             userControlOrder1.Visible = true;
         }
 
