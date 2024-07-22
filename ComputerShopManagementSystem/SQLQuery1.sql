@@ -10,7 +10,8 @@ CREATE TABLE Users
 );
 
 INSERT INTO Users VALUES
-    ('Kavindu', 'sandaruwan@gmail.com', '200385'),
+    ('Kavindu', 'sandaruwan@gmail.com', '200385');
+INSERT INTO Users VALUES
 	('Tech', 'techhaven@gmail.com', '2024');
 	
 
